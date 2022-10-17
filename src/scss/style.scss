@@ -1,0 +1,287 @@
+@import "./variables";
+@import "./normalize";
+
+
+// font-family: 'Gothic A1', sans-serif;
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        height: 2rem;
+        color: $white;
+    }
+}
+
+.button {
+    border: none;
+    background-color: $pink;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    padding: 20px 42px;
+    color: $white;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    color: $white;
+}
+
+.title-top {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: $light-gray;
+}
+
+.description {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: $gray;
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0px auto;
+
+    @media (max-width: 1210px) {
+        width: 740px;
+    }
+
+    @media (max-width: 768px) {
+        width: 320px;
+    }
+}
+
+.header {
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+
+    &__top {
+        height: 100px;
+    }
+
+    &__logo-img {
+        width: 120px;
+        height: 43px;
+    }
+
+    &__content-title {
+        font-size: 8rem;
+        line-height: 8rem;
+        color: $white;
+    }
+
+    &__content-description {
+        font-size: 3rem;
+        line-height: 4.4rem;
+        color: $white;
+        margin: 10px 0px 25px;
+    }
+
+    &__content-img {
+        width: 570px;
+    }
+}
+
+.nullam {
+    padding-top: 100px;
+    background-color: #1B1B1B;
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        width: 600px;
+        margin: 25px auto 55px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 1100px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.acetabula {
+    padding: 100px 0px;
+
+    &__inner {
+        gap: 120px;
+        margin-bottom: 160px;
+
+        &--reverce {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__content {
+        width: 340px;
+    }
+
+    &__title {
+        color: $black;
+        margin: 20px 0px;
+    }
+
+    &__img {
+        width: 310px;
+    }
+}
+
+.benefits {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 340px;
+    }
+
+    &__item-img {
+        width: 60px;
+        height: 27px;
+    }
+
+    &__item-title {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $black;
+        margin: 20px 0px;
+    }
+}
+
+.reviews {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+        width: 720px;
+    }
+
+    &__img {
+        width: 58px;
+        height: 48px;
+    }
+
+    &__slides {
+        margin: 40px 0;
+    }
+
+    &__slides-description {
+        font-size: 2.4rem;
+        line-height: 4rem;
+        text-align: center;
+        color: $gray;
+    }
+}
+
+.partners {
+    padding: 120px 0;
+
+    &__inner {
+        gap: 30px;
+    }
+
+    &__img {
+        width: 250px;
+        height: 54px;
+    }
+}
+
+.phones {
+    background: url("../img/phones.png") no-repeat center center/cover;
+    padding: 236px 0px;
+}
+
+.ready {
+    background: url("../img/ready.svg") no-repeat center center/cover, linear-gradient(276.18deg, #6E28B1 0%, rgba(0, 0, 0, 0) 100%), #FC0A7E;
+    padding: 120px 0px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__buttons {
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    &__button-touch {
+        border: 1px solid $purple;
+        background-color: transparent;
+    }
+}
+
+.subscribe {
+    background-color: #1B1B1B;
+    padding: 100px 0px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+        color: $gray;
+        margin: 20px 0 40px;
+    }
+
+    &__form-input {
+        padding: 23px;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 3px 0 0 3px;
+    }
+
+    &__form-button {
+        border-radius: 0 3px 3px 0;
+    }
+}
+
+.footer {
+    background-color: #1B1B1B;
+    padding: 20px 0 40px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__logo-img {
+        width: 136px;
+        height: 104px;
+    }
+
+    &__link {
+        color: $gray;
+    }
+}
