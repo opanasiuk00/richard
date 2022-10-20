@@ -1,5 +1,6 @@
 import React from "react";
 import "./scss/style.scss"
+import { motion } from "framer-motion";
 import header_logo from "./img/header-logo.svg";
 import header_phone from "./img/header-phone.png";
 import nullam_tablet from "./img/nullam-tablet.png";
@@ -18,25 +19,41 @@ import partners_microsoft from "./img/partners-microsoft.svg";
 import footer_logo from "./img/footer-logo.svg";
 
 const headerMenu = [
-  { id: 0, href: "#", content: "About" },
-  { id: 1, href: "#", content: "Features" },
-  { id: 2, href: "#", content: "How to Use" },
-  { id: 3, href: "#", content: "Download" }
+  { id: 0, href: "#about", content: "About" },
+  { id: 1, href: "#features", content: "Features" },
+  { id: 2, href: "#how_to_use", content: "How to Use" },
+  { id: 3, href: "#download", content: "Download" }
 ];
 const footerMenu = [
-  { id: 0, href: "#", content: "Email" },
-  { id: 1, href: "#", content: "Instagram" },
-  { id: 2, href: "#", content: "Facebook" },
-  { id: 3, href: "#", content: "Twitter" },
-  { id: 4, href: "#", content: "Image License Info" },
-  { id: 5, href: "#", content: "Powered by Webflow" }
+  { id: 0, href: "mailto:gmail@gmail.com", content: "Email" },
+  { id: 1, href: "https://www.instagram.com/", content: "Instagram" },
+  { id: 2, href: "https://www.facebook.com/", content: "Facebook" },
+  { id: 3, href: "https://twitter.com/", content: "Twitter" },
+  { id: 4, href: "https://blog.google/products/search/learn-how-find-image-licensing-information-google-images/", content: "Image License Info" },
+  { id: 5, href: "https://webflow.com/", content: "Powered by Webflow" }
 ];
+
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  }),
+}
 
 const App = () => {
 
   return (
     <>
-      <header className="header">
+      <motion.header
+        initial="hidden"
+        whileInView="visible"
+        className="header"
+      >
         <div className="container">
           <div className="header__top flex-between">
             <div className="header__logo">
@@ -54,15 +71,26 @@ const App = () => {
           </div>
           <div className="header__content flex-between">
             <div className="header__content-inner">
-              <h1 className="header__content-title">Momentum</h1>
-              <p className="header__content-description">Launch your product — and savor the momentum.</p>
-              <button className="button">Get the App</button>
+              <motion.h1
+                className="header__content-title"
+                variants={textAnimation}
+                custom={1}>
+                Momentum
+              </motion.h1>
+              <motion.p
+                className="header__content-description"
+                variants={textAnimation}
+                custom={2}>Launch your product — and savor the momentum.</motion.p>
+              <motion.button
+                className="button"
+                variants={textAnimation}
+                custom={3}>Get the App</motion.button>
             </div>
             <img className="header__content-img" src={header_phone} alt="phone" />
           </div>
         </div>
-      </header>
-      <section className="nullam">
+      </motion.header>
+      <section className="nullam" id="about">
         <div className="container">
           <div className="nullam__inner">
             <h4 className="title-top">Aenean Consectetur Porta</h4>
@@ -71,7 +99,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className="acetabula">
+      <section className="acetabula" id="how_to_use">
         <div className="container">
           <div className="flex-center acetabula__inner">
             <div className="acetabula__content">
@@ -120,7 +148,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className="acetabula">
+      <section className="acetabula" id="features">
         <div className="container">
           <div className="flex-center acetabula__inner">
             <div className="acetabula__content">
@@ -162,7 +190,7 @@ const App = () => {
         </div>
       </section>
       <section className="phones"></section>
-      <section className="ready">
+      <section className="ready" id="download">
         <div className="container">
           <h2 className="title ready__title">Ready to get started?</h2>
           <div className="flex-center ready__buttons">
