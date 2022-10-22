@@ -18,11 +18,11 @@ const Subscribe = () => {
     const subscribeEmail = () => {
         const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
         if (regEx.test(email)) {
-            clearAndOpenWindowSubscribe("subscribed to the newsletter");
+            clearAndOpenWindowSubscribe("Subscribed to the newsletter");
         } else if (!regEx.test(email) && email !== "") {
             clearAndOpenWindowSubscribe("Email is not valid");
         } else {
-            setMessage("")
+            setMessage("");
         }
     }
 
