@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/richard/static/css/main.5ff38a43.css",
+    "main.js": "/richard/static/js/main.e3530360.js",
+    "static/js/787.9c1e953c.chunk.js": "/richard/static/js/787.9c1e953c.chunk.js",
+    "static/media/phones.png": "/richard/static/media/phones.ba178ae7dec461614591.png",
+    "static/media/acetabula-salad.png": "/richard/static/media/acetabula-salad.51c2fb6bba50cf4507e3.png",
+    "static/media/nullam-tablet.png": "/richard/static/media/nullam-tablet.6fa8c3ff486234b3aeab.png",
+    "static/media/acetabula-humburger.png": "/richard/static/media/acetabula-humburger.58b0968690f7eb3e651f.png",
+    "static/media/header-phone.png": "/richard/static/media/header-phone.677bc42c5fac82402721.png",
+    "static/media/acetabula-pasta.png": "/richard/static/media/acetabula-pasta.9125ab3e9f2d0f8bb445.png",
+    "static/media/acetabula-pasta2.png": "/richard/static/media/acetabula-pasta2.140b864793cbf4f8b80b.png",
+    "static/media/ready.svg": "/richard/static/media/ready.26cdb0d500547e58544d.svg",
+    "static/media/acetabula-orders.png": "/richard/static/media/acetabula-orders.d65210620e7613510a3a.png",
+    "static/media/footer-logo.svg": "/richard/static/media/footer-logo.5acd47265fa123423269a16996b6b6aa.svg",
+    "static/media/header-logo.svg": "/richard/static/media/header-logo.e4a3d61465ee5fed671f06a483b56f53.svg",
+    "static/media/partners-microsoft.svg": "/richard/static/media/partners-microsoft.9d8eb883cc823229f0c4e1cccf0519ca.svg",
+    "static/media/partners-product.svg": "/richard/static/media/partners-product.26005e4c538c8e8b52192de3eab242fb.svg",
+    "static/media/benefits-humburger.svg": "/richard/static/media/benefits-humburger.08200fb1a122dce664a0e8dbd6f2f93d.svg",
+    "static/media/partners-uber.svg": "/richard/static/media/partners-uber.0b4839c1e12075fabe63979a77c453be.svg",
+    "static/media/quotes.svg": "/richard/static/media/quotes.66e3d605f752728e34d205353975fa3b.svg",
+    "index.html": "/richard/index.html",
+    "static/media/path.svg": "/richard/static/media/path.b19435394d9cbd4ba33fb2578e435a20.svg",
+    "static/media/benefits-spoon.svg": "/richard/static/media/benefits-spoon.095b6ce1d5a633ba7fe47ba5d9c556e7.svg",
+    "static/media/benefits-optimized.svg": "/richard/static/media/benefits-optimized.77b99b5dcfe3162b04cf6f4794a24f59.svg",
+    "main.5ff38a43.css.map": "/richard/static/css/main.5ff38a43.css.map",
+    "main.e3530360.js.map": "/richard/static/js/main.e3530360.js.map",
+    "787.9c1e953c.chunk.js.map": "/richard/static/js/787.9c1e953c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ff38a43.css",
+    "static/js/main.e3530360.js"
+  ]
+}
